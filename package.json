@@ -1,0 +1,20 @@
+{
+  "name": "otus-1",
+  "version": "1.0.0",
+  "description": "task-1",
+  "main": "test.js",
+  "type": "module",
+  "scripts": {
+    "start": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sprashivaite/Otus-1.git"
+  },
+  "author": "Arkadiy Telitsyn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sprashivaite/Otus-1/issues"
+  },
+  "homepage": "https://github.com/Sprashivaite/Otus-1#readme"
+}
