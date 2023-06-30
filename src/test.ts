@@ -1,6 +1,6 @@
-import paintTreeStructure from "./paintTreeStructure.js";
+import { paintTreeStructure, treeStructureType } from "./paintTreeStructure.js";
 
-const data = {
+const data: treeStructureType = {
   name: 1,
   items: [
     {
