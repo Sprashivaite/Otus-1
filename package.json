@@ -5,7 +5,7 @@
   "main": "test.js",
   "type": "module",
   "scripts": {
-    "start": "node test.js"
+    "start": "npx ts-node --esm src/test.ts"
   },
   "repository": {
     "type": "git",

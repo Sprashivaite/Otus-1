@@ -1,3 +1,4 @@
+import { indexText } from "./indexText.js";
 import { paintTreeStructure, treeStructureType } from "./paintTreeStructure.js";
 
 const data: treeStructureType = {
@@ -25,4 +26,5 @@ const data: treeStructureType = {
   ],
 };
 
-paintTreeStructure(data);
+// paintTreeStructure(data);
+indexText("./src/docs/text.txt");
