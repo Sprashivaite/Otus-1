@@ -5,7 +5,7 @@
   "main": "test.js",
   "type": "module",
   "scripts": {
-    "start": "node test.js"
+    "start": "npx ts-node --esm src/test.ts"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/Sprashivaite/Otus-1/issues"
   },
-  "homepage": "https://github.com/Sprashivaite/Otus-1#readme"
+  "homepage": "https://github.com/Sprashivaite/Otus-1#readme",
+  "devDependencies": {
+    "@tsconfig/node16": "^16.1.0",
+    "@types/node": "^20.3.3",
+    "ts-node": "^10.9.1"
+  },
+  "dependencies": {
+    "typescript": "^5.1.6"
+  }
 }
