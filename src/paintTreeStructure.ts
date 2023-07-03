@@ -6,18 +6,22 @@ export type treeStructureType = {
 export const paintTreeStructure = (
   { name, items }: treeStructureType,
   prevString: string = "",
+  resultStrings: string[] = [],
   isLast?: boolean
 ) => {
   const LString = "└── ";
   const crossString = "├── ";
+  let resultString = "";
 
   if (isLast === undefined) {
-    console.log(name.toString());
+    resultString = name.toString();
   } else if (isLast) {
-    console.log(prevString + LString + name);
+    resultString = prevString + LString + name;
   } else {
-    console.log(prevString + crossString + name);
+    resultString = prevString + crossString + name;
   }
+
+  resultStrings.push(resultString);
 
   items?.forEach((item, index, array) => {
     const isLastIndex = index === array.length - 1;
@@ -25,13 +29,16 @@ export const paintTreeStructure = (
     const IString = "│   ";
 
     if (isLast === undefined) {
-      paintTreeStructure(item, prevString, isLastIndex);
+      paintTreeStructure(item, prevString, resultStrings, isLastIndex);
     } else {
       paintTreeStructure(
         item,
         isLast ? prevString + spaceString : prevString + IString,
+        resultStrings,
         isLastIndex
       );
     }
   });
+
+  return resultStrings.join("\n");
 };

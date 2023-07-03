@@ -25,4 +25,4 @@ const data: treeStructureType = {
   ],
 };
 
-paintTreeStructure(data);
+console.log(paintTreeStructure(data));
