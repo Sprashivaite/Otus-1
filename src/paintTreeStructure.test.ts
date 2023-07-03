@@ -17,12 +17,12 @@ const testData2: treeStructureType = {
   ],
 };
 
-describe("paintTreeStructure", () => {
-  test("single value", () => {
+describe("paintTreeStructure should", () => {
+  test("paint single value", () => {
     const tree = paintTreeStructure(testData1);
     expect(tree).toBe("1");
   });
-  test("tree value", () => {
+  test("paint tree value", () => {
     const tree = paintTreeStructure(testData2);
     const expectedString = "1\n├── 2\n│   ├── 3\n│   └── 4\n└── 5";
     expect(tree).toBe(expectedString);
